@@ -1,6 +1,9 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Shree Gyan Ganj Dham</title>
-<meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Hind:wght@400;500;600&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
@@ -177,7 +180,7 @@ a{color:inherit;text-decoration:none}
 .about-grid{display:grid;gap:3rem;align-items:center}
 @media (min-width:900px){.about-grid{grid-template-columns:1fr 1fr;gap:4.5rem}}
 .collage{position:relative;padding-bottom:3rem;padding-right:0}
-/* REPLACE WITH PHOTO OF THE SACRED ARTWORK / SANCTUM */
+/* REPLACE WITH TEMPLE / DEITY PHOTOS */
 .collage .p1{width:78%;aspect-ratio:4/5;object-fit:cover;border-radius:18px 18px 18px 120px;box-shadow:var(--shadow-lg);display:block;transition:transform .6s ease}
 .collage .p2{position:absolute;right:0;bottom:0;width:52%;aspect-ratio:3/4;object-fit:cover;border-radius:120px 120px 18px 18px;border:6px solid var(--bg);box-shadow:var(--shadow-lg);display:block;transition:transform .6s ease}
 .collage:hover .p1{transform:translate(-4px,-4px)}
@@ -197,8 +200,12 @@ a{color:inherit;text-decoration:none}
 .acharya .lead{color:var(--on-night-muted)}
 .acharya-grid{display:grid;gap:3rem;align-items:center}
 @media (min-width:960px){.acharya-grid{grid-template-columns:.8fr 1.2fr;gap:4.5rem}}
+/* ACHARYA DIPAK SHARMA PORTRAIT (frame is 4:5) */
 .portrait{position:relative;aspect-ratio:4/5;border-radius:20px;border:1px solid var(--gold-bright);display:grid;place-items:center;background:radial-gradient(circle at 50% 35%,#3A2412,#1F130A 70%);overflow:hidden;max-width:420px;width:100%;justify-self:center}
+.portrait .mono{font-family:var(--serif);font-size:7rem;color:var(--gold-bright);letter-spacing:.05em;line-height:1}
+.portrait .ph{position:absolute;bottom:1rem;left:1rem;right:1rem;text-align:center;font-size:.78rem;color:var(--on-night-muted);letter-spacing:.14em;text-transform:uppercase}
 .portrait svg.rings{position:absolute;inset:0;width:100%;height:100%;opacity:.4}
+.portrait-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 20%}
 .exp-badge{position:absolute;right:-1px;top:22px;background:var(--saffron);color:#2B1B12;padding:.6rem 1.1rem .6rem 1.3rem;border-radius:999px 0 0 999px;font-weight:600;font-size:.9rem;box-shadow:var(--shadow)}
 .exp-badge b{font-family:var(--serif);font-size:1.6rem;margin-right:.3rem}
 .pwrap{position:relative;max-width:420px;width:100%;justify-self:center}
@@ -298,7 +305,7 @@ footer ul a:hover{color:var(--saffron);padding-left:4px}
 .socials a{width:42px;height:42px;border-radius:50%;border:1px solid rgba(212,175,79,.4);display:grid;place-items:center;color:var(--on-night);transition:background .25s,transform .25s,color .25s}
 .socials a:hover{background:var(--saffron);color:#2B1B12;transform:translateY(-3px)}
 .socials svg{width:18px;height:18px}
-/* REPLACE WITH GOOGLE MAPS (iframes can't embed inside this preview; paste your <iframe> here on your own site) */
+/* REPLACE WITH GOOGLE MAPS EMBED on your own site */
 .map{position:relative;border-radius:16px;overflow:hidden;border:1px solid rgba(212,175,79,.35);aspect-ratio:4/3;background:#241810;display:block}
 .map svg.grid{position:absolute;inset:0;width:100%;height:100%}
 .map .pin{position:absolute;left:52%;top:46%;translate:-50% -100%;color:var(--saffron);animation:bob 2.2s ease-in-out infinite}
@@ -360,6 +367,8 @@ footer ul a:hover{color:var(--saffron);padding-left:4px}
   .reveal{transform:none}
 }
 </style>
+</head>
+<body>
 
 <!-- ============ NAV ============ -->
 <header class="nav" id="nav">
@@ -379,7 +388,7 @@ footer ul a:hover{color:var(--saffron);padding-left:4px}
         <a class="lnk" href="#contact">Contact</a>
       </nav>
       <div style="display:flex;gap:.6rem;align-items:center">
-        <button class="btn btn-saffron nav-cta" data-open="donate-jump" id="navDonate" type="button">Donate</button>
+        <button class="btn btn-saffron nav-cta" id="navDonate" type="button">Donate</button>
         <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="drawer" aria-label="Open menu" style="display:none"></button>
       </div>
     </div>
@@ -517,7 +526,8 @@ footer ul a:hover{color:var(--saffron);padding-left:4px}
     <div class="pwrap reveal">
       <div class="portrait">
         <svg class="rings" viewBox="0 0 100 125" aria-hidden="true" fill="none" stroke="#D4AF4F" stroke-width=".25"><circle cx="50" cy="55" r="18"/><circle cx="50" cy="55" r="28"/><circle cx="50" cy="55" r="38"/><circle cx="50" cy="55" r="48"/></svg>
-        <img src="img/acharya.jpg" alt="Acharya Dipak Sharma" style="width:100%;height:100%;object-fit:cover;">
+        <!-- ACHARYA PHOTO: file must be at img/IMG_9227.png -->
+        <img class="portrait-img" src="img/IMG_9227.png" alt="Acharya Dipak Sharma">
       </div>
       <div class="exp-badge"><b>20+</b> years</div>
     </div>
@@ -766,7 +776,7 @@ footer ul a:hover{color:var(--saffron);padding-left:4px}
     <div class="modal-body" style="text-align:center;display:grid;gap:.8rem;justify-items:center">
       <h3 id="darshanTitle" style="font-size:2rem">Virtual Darshan</h3>
       <p style="color:var(--muted)">Take darshan of Maa Laxmi Bala Tripur Sundari from wherever you are. Live aarti streams during Mangala, Sandhya and Friday Maha Aarti.</p>
-      <!-- REPLACE # WITH YOUR YOUTUBE LIVE / FACEBOOK LIVE LINK -->
+      <!-- REPLACE THE LINK WITH YOUR YOUTUBE LIVE / FACEBOOK LIVE URL -->
       <a class="btn btn-saffron" href="https://www.youtube.com/" target="_blank" rel="noopener"><i data-lucide="play"></i> Watch live aarti</a>
       <small style="color:var(--muted)">॥ जय माँ लक्ष्मी ॥</small>
     </div>
@@ -958,8 +968,7 @@ footer ul a:hover{color:var(--saffron);padding-left:4px}
     if($('#cDob').value) rows.push(['Date of birth',$('#cDob').value]);
     if($('#cTob').value.trim()) rows.push(['Birth time and place',$('#cTob').value.trim()]);
     $('#recap').innerHTML=rows.map(function(r){ return '<div><span></span><b></b></div>'; }).join('');
-    $$('#recap div').forEach(function(div,i){ $('span',div).textContent=r0(rows[i]); $('b',div).textContent=rows[i][1]; });
-    function r0(r){return r[0];}
+    $$('#recap div').forEach(function(div,i){ $('span',div).textContent=rows[i][0]; $('b',div).textContent=rows[i][1]; });
     var q=$('#cMsg').value.trim();
     lastReq='Namaste. I would like to book a consultation with Acharya Dipak Sharma.\n'+rows.map(function(r){return r[0]+': '+r[1]}).join('\n')+(q?'\nQuestion: '+q:'');
     $('#waLink').href='https://wa.me/'+WHATSAPP+'?text='+encodeURIComponent(lastReq);
@@ -994,5 +1003,5 @@ footer ul a:hover{color:var(--saffron);padding-left:4px}
   window.addEventListener('resize',function(){ size(); seed(); });
 })();
 </script>
-
-</body></html>
+</body>
+</html>
