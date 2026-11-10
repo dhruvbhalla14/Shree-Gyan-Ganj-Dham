@@ -177,7 +177,7 @@ a{color:inherit;text-decoration:none}
 .about-grid{display:grid;gap:3rem;align-items:center}
 @media (min-width:900px){.about-grid{grid-template-columns:1fr 1fr;gap:4.5rem}}
 .collage{position:relative;padding-bottom:3rem;padding-right:0}
-/* REPLACE WITH TEMPLE / DEITY PHOTOS */
+/* REPLACE WITH PHOTO OF THE SACRED ARTWORK / SANCTUM */
 .collage .p1{width:78%;aspect-ratio:4/5;object-fit:cover;border-radius:18px 18px 18px 120px;box-shadow:var(--shadow-lg);display:block;transition:transform .6s ease}
 .collage .p2{position:absolute;right:0;bottom:0;width:52%;aspect-ratio:3/4;object-fit:cover;border-radius:120px 120px 18px 18px;border:6px solid var(--bg);box-shadow:var(--shadow-lg);display:block;transition:transform .6s ease}
 .collage:hover .p1{transform:translate(-4px,-4px)}
@@ -197,10 +197,7 @@ a{color:inherit;text-decoration:none}
 .acharya .lead{color:var(--on-night-muted)}
 .acharya-grid{display:grid;gap:3rem;align-items:center}
 @media (min-width:960px){.acharya-grid{grid-template-columns:.8fr 1.2fr;gap:4.5rem}}
-/* REPLACE WITH ACHARYA DIPAK SHARMA PORTRAIT (use a vertical photo; this frame is 4:5) */
 .portrait{position:relative;aspect-ratio:4/5;border-radius:20px;border:1px solid var(--gold-bright);display:grid;place-items:center;background:radial-gradient(circle at 50% 35%,#3A2412,#1F130A 70%);overflow:hidden;max-width:420px;width:100%;justify-self:center}
-.portrait .mono{font-family:var(--serif);font-size:7rem;color:var(--gold-bright);letter-spacing:.05em;line-height:1}
-.portrait .ph{position:absolute;bottom:1rem;left:1rem;right:1rem;text-align:center;font-size:.78rem;color:var(--on-night-muted);letter-spacing:.14em;text-transform:uppercase}
 .portrait svg.rings{position:absolute;inset:0;width:100%;height:100%;opacity:.4}
 .exp-badge{position:absolute;right:-1px;top:22px;background:var(--saffron);color:#2B1B12;padding:.6rem 1.1rem .6rem 1.3rem;border-radius:999px 0 0 999px;font-weight:600;font-size:.9rem;box-shadow:var(--shadow)}
 .exp-badge b{font-family:var(--serif);font-size:1.6rem;margin-right:.3rem}
@@ -520,9 +517,7 @@ footer ul a:hover{color:var(--saffron);padding-left:4px}
     <div class="pwrap reveal">
       <div class="portrait">
         <svg class="rings" viewBox="0 0 100 125" aria-hidden="true" fill="none" stroke="#D4AF4F" stroke-width=".25"><circle cx="50" cy="55" r="18"/><circle cx="50" cy="55" r="28"/><circle cx="50" cy="55" r="38"/><circle cx="50" cy="55" r="48"/></svg>
-        <!-- REPLACE WITH ACHARYA DIPAK SHARMA PORTRAIT: <img src="acharya.jpg" alt="Acharya Dipak Sharma" style="width:100%;height:100%;object-fit:cover"> -->
-        <div class="mono">DS</div>
-        <div class="ph">Portrait placeholder</div>
+        <img src="img/acharya.jpg" alt="Acharya Dipak Sharma" style="width:100%;height:100%;object-fit:cover;">
       </div>
       <div class="exp-badge"><b>20+</b> years</div>
     </div>
