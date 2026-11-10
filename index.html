@@ -1,0 +1,1003 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Shree Gyan Ganj Dham</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Hind:wght@400;500;600&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+<style>
+/* LAYOUT CONCEPT: a lamp-lit sanctum. Dark golden hero with the deity in an arched niche, then warm cream "courtyard" sections.
+   Palette: cream paper, deep brown ink, saffron, antique gold, kumkum red, night brown. */
+:root{
+  --bg:#FBF4E6; --bg-alt:#F5EAD3; --card:#FFFBF3; --ink:#2B1B12; --muted:#6B5645;
+  --saffron:#FF9933; --saffron-text:#A8520A; --gold:#A9822A; --gold-bright:#D4AF4F; --kumkum:#8E1F17;
+  --line:rgba(120,80,30,.24); --shadow:0 10px 30px -12px rgba(70,40,10,.28); --shadow-lg:0 24px 60px -20px rgba(70,40,10,.38);
+  --night:#1A0F08; --night-2:#2A1A0F; --on-night:#F8EBD2; --on-night-muted:#C9B493;
+  --serif:'Cormorant Garamond',Georgia,'Times New Roman',serif;
+  --sans:'Hind','Segoe UI',system-ui,-apple-system,sans-serif;
+  --deva:'Tiro Devanagari Hindi','Noto Serif Devanagari',serif;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#150D07; --bg-alt:#1C120A; --card:#251910; --ink:#F6EBD6; --muted:#BDA98C;
+  --saffron-text:#FFA64D; --gold:#D9B253; --kumkum:#E8786B; --line:rgba(230,190,110,.2);
+  --shadow:0 10px 30px -12px rgba(0,0,0,.6); --shadow-lg:0 24px 60px -20px rgba(0,0,0,.7); color-scheme:dark; } }
+:root[data-theme="dark"]{
+  --bg:#150D07; --bg-alt:#1C120A; --card:#251910; --ink:#F6EBD6; --muted:#BDA98C;
+  --saffron-text:#FFA64D; --gold:#D9B253; --kumkum:#E8786B; --line:rgba(230,190,110,.2);
+  --shadow:0 10px 30px -12px rgba(0,0,0,.6); --shadow-lg:0 24px 60px -20px rgba(0,0,0,.7); color-scheme:dark; }
+
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.65;margin:0;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--night)}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:600;line-height:1.1;text-wrap:balance;margin:0}
+p{margin:0}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--saffron);outline-offset:3px;border-radius:6px}
+.wrap{width:100%;max-width:1180px;margin-inline:auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.section{padding-block:96px}
+.section.alt{background:var(--bg-alt)}
+.eyebrow{font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;color:var(--saffron-text);font-weight:600;display:inline-flex;align-items:center;gap:.7rem}
+.eyebrow::before{content:"";width:28px;height:1px;background:currentColor}
+.h2{font-size:clamp(2.2rem,4.6vw,3.4rem);margin-top:.9rem}
+.lead{color:var(--muted);max-width:60ch;margin-top:1rem}
+.deva{font-family:var(--deva)}
+.mobile-hide{display:none}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;padding:.9rem 1.6rem;border-radius:999px;font-weight:600;font-size:.98rem;border:1.5px solid transparent;cursor:pointer;transition:transform .25s ease,box-shadow .25s ease,background .25s ease,color .25s ease,border-color .25s ease;font-family:var(--sans);line-height:1.2}
+.btn svg{width:18px;height:18px;transition:transform .25s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:translateY(0) scale(.98)}
+.btn-saffron{background:var(--saffron);color:#2B1B12;box-shadow:0 10px 24px -10px rgba(255,153,51,.8)}
+.btn-saffron:hover{box-shadow:0 14px 30px -10px rgba(255,153,51,.95);background:#FFA64D}
+.btn-saffron:hover svg{transform:translateX(3px)}
+.btn-ghost{background:rgba(248,235,210,.06);color:var(--on-night);border-color:rgba(248,235,210,.5)}
+.btn-ghost:hover{background:rgba(248,235,210,.16);border-color:var(--on-night)}
+.btn-outline{background:transparent;color:var(--ink);border-color:var(--gold)}
+.btn-outline:hover{background:var(--gold);color:#1A0F08}
+.btn-dark{background:var(--ink);color:var(--bg)}
+.btn-dark:hover{box-shadow:var(--shadow)}
+.btn[disabled]{opacity:.55;cursor:not-allowed;transform:none}
+
+/* Nav */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(26,15,8,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(212,175,79,.28);color:var(--on-night);transition:box-shadow .3s}
+.nav.scrolled{box-shadow:0 10px 30px -12px rgba(0,0,0,.6)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:72px;gap:1rem}
+.logo{display:flex;align-items:center;gap:.75rem;min-width:0}
+/* REPLACE WITH TEMPLE LOGO (swap this .logo-mark block for an <img src="logo.png">) */
+.logo-mark{width:44px;height:44px;border-radius:50%;border:1.5px solid var(--gold-bright);display:grid;place-items:center;color:var(--gold-bright);flex:none;background:radial-gradient(circle,rgba(212,175,79,.18),transparent 70%)}
+.logo-mark svg{width:22px;height:22px}
+.logo-text{display:flex;flex-direction:column;line-height:1.05;min-width:0}
+.logo-text b{font-family:var(--serif);font-size:1.3rem;font-weight:700;letter-spacing:.02em;white-space:nowrap}
+.logo-text span{font-family:var(--deva);font-size:.78rem;color:var(--gold-bright);white-space:nowrap}
+.links{display:none;align-items:center;gap:1.7rem}
+.links a.lnk{font-size:.95rem;color:var(--on-night-muted);position:relative;padding:.3rem 0;transition:color .2s}
+.links a.lnk::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:1.5px;background:var(--saffron);transform:scaleX(0);transform-origin:left;transition:transform .3s ease}
+.links a.lnk:hover,.links a.lnk.active{color:var(--on-night)}
+.links a.lnk:hover::after,.links a.lnk.active::after{transform:scaleX(1)}
+.nav .btn{padding:.6rem 1.15rem;font-size:.9rem}
+.burger{display:grid;place-items:center;width:44px;height:44px;border-radius:12px;border:1px solid rgba(212,175,79,.4);background:transparent;color:var(--on-night);cursor:pointer;transition:background .2s}
+.burger:hover{background:rgba(212,175,79,.15)}
+.burger .i-close{display:none}
+.burger[aria-expanded="true"] .i-open{display:none}
+.burger[aria-expanded="true"] .i-close{display:block}
+.drawer{display:grid;grid-template-rows:0fr;transition:grid-template-rows .35s ease;background:var(--night);border-top:1px solid transparent}
+.drawer.open{grid-template-rows:1fr;border-top-color:rgba(212,175,79,.25)}
+.drawer>div{overflow:hidden}
+.drawer nav{display:flex;flex-direction:column;padding:.5rem 0 1.4rem}
+.drawer a.dl{padding:.85rem 0;border-bottom:1px solid rgba(212,175,79,.14);color:var(--on-night);font-family:var(--serif);font-size:1.35rem;display:flex;justify-content:space-between;align-items:center}
+.drawer a.dl:hover{color:var(--saffron)}
+.drawer .btn{margin-top:1.1rem}
+@media (min-width:1024px){.links{display:flex}.burger,.drawer{display:none}}
+
+/* Hero */
+.hero{position:relative;min-height:100svh;background:var(--night);color:var(--on-night);overflow:hidden;display:flex;align-items:center;isolation:isolate}
+/* REPLACE WITH HERO BACKGROUND (golden temple wall / mandir interior) */
+.hero-bg{position:absolute;inset:0;z-index:-3;background:url('img/deity-shringar.jpg') center/cover no-repeat;transform:scale(1.08);animation:drift 28s ease-in-out infinite alternate}
+.hero::before{content:"";position:absolute;inset:0;z-index:-2;background:linear-gradient(90deg,rgba(18,10,5,.94) 0%,rgba(18,10,5,.82) 48%,rgba(18,10,5,.68) 100%)}
+.hero::after{content:"";position:absolute;inset:auto 0 0;height:160px;z-index:-1;background:linear-gradient(to top,var(--bg),transparent);opacity:0}
+@keyframes drift{from{transform:scale(1.08) translate3d(0,0,0)}to{transform:scale(1.16) translate3d(-1.5%,-1%,0)}}
+#sparks{position:absolute;inset:0;width:100%;height:100%;z-index:-1;pointer-events:none}
+.hero-in{display:grid;gap:2.5rem;align-items:center;padding-block:48px 72px}
+.hero-copy{display:flex;flex-direction:column;gap:1.4rem;align-items:flex-start;min-width:0}
+.om{font-family:var(--deva);font-size:1.15rem;color:var(--gold-bright);letter-spacing:.08em}
+.hero h1{font-size:clamp(3rem,8.5vw,6rem);font-weight:600;color:var(--on-night);letter-spacing:-.005em}
+.hero h1 em{display:block;font-style:italic;color:var(--saffron);font-weight:500}
+.hero .sub{font-size:1.12rem;color:var(--on-night-muted);max-width:46ch}
+.deity-tag{display:inline-flex;align-items:center;gap:.6rem;border:1px solid rgba(212,175,79,.45);padding:.45rem 1rem;border-radius:999px;font-size:.88rem;color:var(--gold-bright);background:rgba(212,175,79,.08)}
+.deity-tag svg{width:16px;height:16px}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:.4rem}
+.hero-meta{display:flex;flex-wrap:wrap;gap:1.4rem 2rem;margin-top:1rem;padding-top:1.4rem;border-top:1px solid rgba(212,175,79,.25);width:100%}
+.hero-meta div{display:flex;flex-direction:column}
+.hero-meta small{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--on-night-muted)}
+.hero-meta b{font-family:var(--serif);font-size:1.35rem;font-weight:600}
+.status-dot{display:inline-block;width:9px;height:9px;border-radius:50%;background:#6FCF73;margin-right:.45rem;box-shadow:0 0 0 0 rgba(111,207,115,.6);animation:pulse 2s infinite}
+.status-dot.closed{background:#E26B5E;animation:none}
+@keyframes pulse{70%{box-shadow:0 0 0 9px rgba(111,207,115,0)}100%{box-shadow:0 0 0 0 rgba(111,207,115,0)}}
+
+.niche{position:relative;justify-self:center;width:min(100%,360px);order:-1}
+.mandala{position:absolute;left:50%;top:44%;width:150%;aspect-ratio:1;translate:-50% -50%;z-index:-1;opacity:.5;animation:spin 140s linear infinite;pointer-events:none}
+@keyframes spin{to{rotate:360deg}}
+.arch{position:relative;aspect-ratio:3/4.3;border-radius:999px 999px 20px 20px;padding:10px;border:1.5px solid var(--gold-bright);background:rgba(26,15,8,.55);box-shadow:0 0 90px -10px rgba(255,153,51,.35),var(--shadow-lg)}
+.arch::before{content:"";position:absolute;inset:-14px;border-radius:999px 999px 28px 28px;border:1px solid rgba(212,175,79,.32);pointer-events:none}
+/* REPLACE WITH MAA LAXMI BALA TRIPUR SUNDARI PHOTO */
+.arch img{width:100%;height:100%;object-fit:cover;object-position:50% 38%;border-radius:999px 999px 12px 12px;display:block}
+.arch figcaption{position:absolute;left:50%;bottom:-18px;translate:-50% 0;background:var(--night);color:var(--gold-bright);border:1px solid var(--gold-bright);padding:.35rem 1.1rem;border-radius:999px;font-family:var(--deva);font-size:.95rem;white-space:nowrap}
+@media (min-width:900px){
+  .hero-in{grid-template-columns:1.15fr .85fr;gap:3rem}
+  .niche{order:0;width:min(100%,400px)}
+  .mobile-hide{display:inline}
+}
+.rise{animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
+@keyframes rise{from{transform:translateY(26px);opacity:.01}to{transform:none;opacity:1}}
+.d1{animation-delay:.08s}.d2{animation-delay:.2s}.d3{animation-delay:.34s}.d4{animation-delay:.48s}.d5{animation-delay:.62s}
+.scroll-cue{position:absolute;bottom:18px;left:50%;translate:-50% 0;color:var(--on-night-muted);display:none}
+.scroll-cue svg{animation:bob 2s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(6px)}}
+@media (min-height:760px) and (min-width:900px){.scroll-cue{display:block}}
+
+/* Reveal: content stays visible, only lifts into place */
+.reveal{transform:translateY(22px);transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{transform:none}
+
+/* Cards */
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow)}
+
+/* Timings */
+.timings-grid{display:grid;gap:1.6rem;margin-top:2.6rem}
+@media (min-width:960px){.timings-grid{grid-template-columns:1.5fr 1fr}}
+.tabs{display:flex;gap:.4rem;padding:.4rem;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.tab{flex:1 1 auto;padding:.7rem 1rem;border-radius:12px;border:0;background:transparent;color:var(--muted);font-family:var(--sans);font-weight:600;font-size:.95rem;cursor:pointer;display:inline-flex;gap:.5rem;align-items:center;justify-content:center;transition:background .2s,color .2s}
+.tab svg{width:17px;height:17px}
+.tab:hover{color:var(--ink);background:var(--bg-alt)}
+.tab[aria-selected="true"]{background:var(--ink);color:var(--bg)}
+.tabpanel{padding:1.2rem 1.4rem 1.6rem}
+.tabpanel[hidden]{display:none}
+.trow{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;padding:.95rem 0;border-bottom:1px dashed var(--line)}
+.trow:last-child{border-bottom:0}
+.trow .nm{display:flex;flex-direction:column;min-width:0}
+.trow .nm b{font-family:var(--serif);font-size:1.3rem;font-weight:600}
+.trow .nm span{font-size:.88rem;color:var(--muted)}
+.trow time{font-weight:600;color:var(--saffron-text);white-space:nowrap;font-variant-numeric:tabular-nums}
+.trow.now{background:linear-gradient(90deg,rgba(255,153,51,.14),transparent);margin-inline:-1.4rem;padding-inline:1.4rem;border-radius:10px}
+.notice{position:relative;overflow:hidden;background:var(--night);color:var(--on-night);border-radius:18px;padding:2rem;border:1px solid var(--gold-bright);box-shadow:var(--shadow-lg);display:flex;flex-direction:column;gap:1rem}
+.notice::before{content:"";position:absolute;right:-60px;top:-60px;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,rgba(255,153,51,.35),transparent 70%)}
+.notice .tag{display:inline-flex;align-items:center;gap:.5rem;font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:var(--saffron);font-weight:600}
+.notice h3{font-size:2rem;position:relative}
+.notice p{color:var(--on-night-muted);position:relative}
+.cd{display:grid;grid-template-columns:repeat(4,1fr);gap:.6rem;position:relative}
+.cd div{background:rgba(248,235,210,.07);border:1px solid rgba(212,175,79,.3);border-radius:12px;padding:.7rem .2rem;text-align:center}
+.cd b{display:block;font-family:var(--serif);font-size:1.8rem;line-height:1;font-variant-numeric:tabular-nums}
+.cd small{font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--on-night-muted)}
+.mini-note{font-size:.85rem;color:var(--muted);margin-top:1rem;display:flex;gap:.5rem;align-items:flex-start}
+.mini-note svg{width:16px;height:16px;flex:none;margin-top:.25rem}
+
+/* About */
+.about-grid{display:grid;gap:3rem;align-items:center}
+@media (min-width:900px){.about-grid{grid-template-columns:1fr 1fr;gap:4.5rem}}
+.collage{position:relative;padding-bottom:3rem;padding-right:0}
+/* REPLACE WITH TEMPLE / DEITY PHOTOS */
+.collage .p1{width:78%;aspect-ratio:4/5;object-fit:cover;border-radius:18px 18px 18px 120px;box-shadow:var(--shadow-lg);display:block;transition:transform .6s ease}
+.collage .p2{position:absolute;right:0;bottom:0;width:52%;aspect-ratio:3/4;object-fit:cover;border-radius:120px 120px 18px 18px;border:6px solid var(--bg);box-shadow:var(--shadow-lg);display:block;transition:transform .6s ease}
+.collage:hover .p1{transform:translate(-4px,-4px)}
+.collage:hover .p2{transform:translate(4px,4px)}
+.about-points{display:grid;gap:1rem;margin-top:1.8rem}
+.about-points li{display:flex;gap:.9rem;align-items:flex-start;list-style:none}
+.about-points .ic{flex:none;width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:var(--bg-alt);color:var(--saffron-text);border:1px solid var(--line)}
+.about-points .ic svg{width:19px;height:19px}
+.about-points b{display:block;font-family:var(--serif);font-size:1.25rem}
+.about-points span{color:var(--muted);font-size:.95rem}
+.shloka{margin-top:1.8rem;padding:1.2rem 1.4rem;border-left:2px solid var(--gold);font-family:var(--deva);font-size:1.15rem;color:var(--gold);line-height:1.8}
+.shloka small{display:block;font-family:var(--sans);font-size:.85rem;color:var(--muted);margin-top:.3rem}
+
+/* Acharya */
+.acharya{background:var(--night);color:var(--on-night);position:relative;overflow:hidden}
+.acharya .eyebrow{color:var(--saffron)}
+.acharya .lead{color:var(--on-night-muted)}
+.acharya-grid{display:grid;gap:3rem;align-items:center}
+@media (min-width:960px){.acharya-grid{grid-template-columns:.8fr 1.2fr;gap:4.5rem}}
+/* REPLACE WITH ACHARYA DIPAK SHARMA PORTRAIT (use a vertical photo; this frame is 4:5) */
+.portrait{position:relative;aspect-ratio:4/5;border-radius:20px;border:1px solid var(--gold-bright);display:grid;place-items:center;background:radial-gradient(circle at 50% 35%,#3A2412,#1F130A 70%);overflow:hidden;max-width:420px;width:100%;justify-self:center}
+.portrait .mono{font-family:var(--serif);font-size:7rem;color:var(--gold-bright);letter-spacing:.05em;line-height:1}
+.portrait .ph{position:absolute;bottom:1rem;left:1rem;right:1rem;text-align:center;font-size:.78rem;color:var(--on-night-muted);letter-spacing:.14em;text-transform:uppercase}
+.portrait svg.rings{position:absolute;inset:0;width:100%;height:100%;opacity:.4}
+.exp-badge{position:absolute;right:-1px;top:22px;background:var(--saffron);color:#2B1B12;padding:.6rem 1.1rem .6rem 1.3rem;border-radius:999px 0 0 999px;font-weight:600;font-size:.9rem;box-shadow:var(--shadow)}
+.exp-badge b{font-family:var(--serif);font-size:1.6rem;margin-right:.3rem}
+.pwrap{position:relative;max-width:420px;width:100%;justify-self:center}
+.svc-grid{display:grid;gap:1rem;margin-top:2rem}
+@media (min-width:640px){.svc-grid{grid-template-columns:1fr 1fr}}
+.svc{padding:1.4rem;border-radius:16px;border:1px solid rgba(212,175,79,.3);background:rgba(248,235,210,.04);transition:transform .3s ease,border-color .3s,background .3s}
+.svc:hover{transform:translateY(-5px);border-color:var(--saffron);background:rgba(255,153,51,.08)}
+.svc .ic{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;background:rgba(255,153,51,.14);color:var(--saffron);margin-bottom:.9rem;transition:transform .4s ease}
+.svc:hover .ic{transform:rotate(-8deg) scale(1.08)}
+.svc h3{font-size:1.5rem}
+.svc p{color:var(--on-night-muted);font-size:.93rem;margin-top:.35rem}
+.acharya .actions{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:2rem;align-items:center}
+.acharya .actions small{color:var(--on-night-muted)}
+
+/* Donation */
+.don-grid{display:grid;gap:1.6rem;margin-top:2.6rem}
+@media (min-width:960px){.don-grid{grid-template-columns:1.35fr 1fr}}
+.don-card{padding:2rem}
+.don-top{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+.seg{display:inline-flex;padding:4px;border-radius:999px;background:var(--bg-alt);border:1px solid var(--line)}
+.seg button{border:0;background:transparent;color:var(--muted);padding:.45rem 1.1rem;border-radius:999px;font-weight:600;font-family:var(--sans);cursor:pointer;font-size:.9rem;transition:background .2s,color .2s}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.amounts{display:grid;grid-template-columns:repeat(2,1fr);gap:.9rem;margin-top:1.4rem}
+@media (min-width:640px){.amounts{grid-template-columns:repeat(4,1fr)}}
+.amt{position:relative;text-align:left;padding:1.1rem 1rem;border-radius:14px;border:1.5px solid var(--line);background:var(--bg);color:var(--ink);cursor:pointer;font-family:var(--sans);transition:transform .25s ease,border-color .25s,box-shadow .25s,background .25s;display:flex;flex-direction:column;gap:.15rem}
+.amt b{font-family:var(--serif);font-size:1.9rem;font-variant-numeric:tabular-nums;line-height:1.1}
+.amt span{font-size:.82rem;color:var(--muted)}
+.amt:hover{transform:translateY(-4px);border-color:var(--saffron);box-shadow:var(--shadow)}
+.amt[aria-pressed="true"]{border-color:var(--saffron);background:rgba(255,153,51,.13);box-shadow:0 0 0 3px rgba(255,153,51,.25)}
+.amt[aria-pressed="true"]::after{content:"";position:absolute;right:10px;top:10px;width:20px;height:20px;border-radius:50%;background:var(--saffron) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232B1B12' stroke-width='3.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E") center/12px no-repeat;animation:pop .3s ease}
+@keyframes pop{from{transform:scale(0)}to{transform:scale(1)}}
+.field{display:flex;flex-direction:column;gap:.4rem;min-width:0}
+.field label{font-size:.84rem;font-weight:600;color:var(--muted);letter-spacing:.03em}
+.input{width:100%;box-sizing:border-box;padding:.8rem 1rem;border-radius:12px;border:1.5px solid var(--line);background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:1rem;transition:border-color .2s,box-shadow .2s}
+.input:hover{border-color:var(--gold)}
+.input:focus{outline:0;border-color:var(--saffron);box-shadow:0 0 0 3px rgba(255,153,51,.28)}
+.input.err{border-color:#D14B3D}
+.err-msg{color:#C0392B;font-size:.82rem;min-height:0}
+:root[data-theme="dark"] .err-msg{color:#FF8E80}
+.cur-input{position:relative}
+.cur-input span{position:absolute;left:1rem;top:50%;translate:0 -50%;font-family:var(--serif);font-size:1.3rem;color:var(--saffron-text)}
+.cur-input .input{padding-left:2.2rem;font-size:1.15rem;font-variant-numeric:tabular-nums}
+.form-2{display:grid;gap:1rem;margin-top:1.3rem}
+@media (min-width:640px){.form-2{grid-template-columns:1fr 1fr}}
+.summary{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;margin-top:1.6rem;padding-top:1.4rem;border-top:1px dashed var(--line)}
+.summary .big{font-family:var(--serif);font-size:2.3rem;font-weight:600;line-height:1}
+.summary small{display:block;color:var(--muted);font-size:.85rem;margin-top:.2rem}
+.pay-box{margin-top:1.4rem;padding:1.2rem 1.3rem;border-radius:14px;background:var(--bg-alt);border:1px dashed var(--gold)}
+.pay-box[hidden]{display:none}
+.copyrow{display:flex;gap:.6rem;align-items:center;margin-top:.6rem;flex-wrap:wrap}
+.copyrow code{font-family:ui-monospace,Menlo,monospace;background:var(--card);border:1px solid var(--line);padding:.4rem .7rem;border-radius:8px;font-size:.92rem;user-select:all;word-break:break-all}
+.chip{border:1px solid var(--line);background:var(--card);color:var(--ink);padding:.4rem .8rem;border-radius:999px;font-size:.85rem;cursor:pointer;display:inline-flex;gap:.4rem;align-items:center;font-family:var(--sans);transition:background .2s,border-color .2s}
+.chip:hover{border-color:var(--saffron);background:var(--bg-alt)}
+.chip svg{width:14px;height:14px}
+.impact{display:flex;flex-direction:column;gap:1rem;padding:2rem;background:var(--night);color:var(--on-night);border:1px solid var(--gold-bright)}
+.impact h3{font-size:1.8rem}
+.impact li{list-style:none;display:flex;gap:.8rem;align-items:flex-start;color:var(--on-night-muted);font-size:.96rem}
+.impact li svg{width:20px;height:20px;color:var(--saffron);flex:none;margin-top:.2rem}
+.impact ul{display:grid;gap:.9rem;padding:0;margin:0}
+.impact b{color:var(--on-night);font-weight:600}
+.impact hr{border:0;border-top:1px solid rgba(212,175,79,.25);margin:.4rem 0}
+
+/* Festivals */
+.tl{position:relative;margin-top:3rem;display:grid;gap:1.4rem;padding-left:0}
+.tl::before{content:"";position:absolute;left:23px;top:8px;bottom:8px;width:2px;background:linear-gradient(var(--gold),var(--line))}
+.ev{position:relative;display:grid;grid-template-columns:48px 1fr;gap:1.1rem;align-items:start}
+.ev .dot{position:relative;z-index:1;width:48px;height:48px;border-radius:50%;background:var(--bg);border:2px solid var(--gold);display:grid;place-items:center;color:var(--saffron-text);transition:background .3s,color .3s,transform .3s}
+.ev .dot svg{width:21px;height:21px}
+.ev:hover .dot{background:var(--saffron);color:#2B1B12;transform:scale(1.08)}
+.ev .body{padding:1.4rem 1.5rem;display:grid;gap:1rem;transition:transform .3s,box-shadow .3s;min-width:0}
+.ev:hover .body{transform:translateX(5px);box-shadow:var(--shadow-lg)}
+@media (min-width:760px){.ev .body{grid-template-columns:1fr auto;align-items:center}}
+.ev .date{font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--saffron-text);font-weight:600}
+.ev h3{font-size:1.75rem;margin-top:.25rem}
+.ev p{color:var(--muted);font-size:.95rem;margin-top:.4rem;max-width:56ch}
+.ev .cdm{display:flex;gap:.5rem}
+.ev .cdm div{min-width:62px;text-align:center;padding:.55rem .5rem;border-radius:12px;background:var(--bg-alt);border:1px solid var(--line)}
+.ev .cdm b{display:block;font-family:var(--serif);font-size:1.6rem;line-height:1;font-variant-numeric:tabular-nums}
+.ev .cdm small{font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.ev.next .body{border-color:var(--saffron);box-shadow:0 0 0 3px rgba(255,153,51,.18),var(--shadow)}
+.ev.next .dot{background:var(--saffron);color:#2B1B12}
+.badge{display:inline-block;margin-left:.6rem;font-size:.68rem;background:var(--saffron);color:#2B1B12;padding:.12rem .6rem;border-radius:999px;letter-spacing:.1em;vertical-align:middle;font-weight:600}
+
+/* Footer */
+footer{background:var(--night);color:var(--on-night);padding-top:80px;position:relative}
+.foot-grid{display:grid;gap:2.6rem}
+@media (min-width:760px){.foot-grid{grid-template-columns:1.2fr .7fr 1fr}}
+@media (min-width:1100px){.foot-grid{grid-template-columns:1.2fr .6fr .9fr 1.1fr}}
+footer h4{font-size:1.35rem;color:var(--gold-bright);margin-bottom:1rem}
+footer p,footer li{color:var(--on-night-muted);font-size:.95rem}
+footer ul{list-style:none;padding:0;margin:0;display:grid;gap:.6rem}
+footer ul a{transition:color .2s,padding .2s}
+footer ul a:hover{color:var(--saffron);padding-left:4px}
+.contact li{display:flex;gap:.7rem;align-items:flex-start}
+.contact svg{width:18px;height:18px;color:var(--saffron);flex:none;margin-top:.28rem}
+.socials{display:flex;gap:.6rem;margin-top:1.2rem}
+.socials a{width:42px;height:42px;border-radius:50%;border:1px solid rgba(212,175,79,.4);display:grid;place-items:center;color:var(--on-night);transition:background .25s,transform .25s,color .25s}
+.socials a:hover{background:var(--saffron);color:#2B1B12;transform:translateY(-3px)}
+.socials svg{width:18px;height:18px}
+/* REPLACE WITH GOOGLE MAPS (iframes can't embed inside this preview; paste your <iframe> here on your own site) */
+.map{position:relative;border-radius:16px;overflow:hidden;border:1px solid rgba(212,175,79,.35);aspect-ratio:4/3;background:#241810;display:block}
+.map svg.grid{position:absolute;inset:0;width:100%;height:100%}
+.map .pin{position:absolute;left:52%;top:46%;translate:-50% -100%;color:var(--saffron);animation:bob 2.2s ease-in-out infinite}
+.map .pin svg{width:40px;height:40px;filter:drop-shadow(0 6px 6px rgba(0,0,0,.5))}
+.map .lbl{position:absolute;left:12px;right:12px;bottom:12px;display:flex;justify-content:space-between;align-items:center;gap:.5rem;background:rgba(26,15,8,.9);border:1px solid rgba(212,175,79,.35);border-radius:12px;padding:.55rem .8rem;font-size:.85rem;color:var(--on-night);transition:background .2s}
+.map:hover .lbl{background:rgba(255,153,51,.95);color:#2B1B12}
+.foot-bottom{margin-top:3.4rem;padding-block:1.6rem;border-top:1px solid rgba(212,175,79,.2);display:flex;flex-wrap:wrap;justify-content:space-between;gap:.8rem;font-size:.85rem;color:var(--on-night-muted)}
+
+/* Modals */
+.overlay{position:fixed;inset:0;z-index:100;background:rgba(14,8,4,.74);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);display:grid;place-items:center;padding:max(14px,env(safe-area-inset-top,0px)) max(14px,env(safe-area-inset-right,0px)) max(14px,env(safe-area-inset-bottom,0px)) max(14px,env(safe-area-inset-left,0px));opacity:0;visibility:hidden;transition:opacity .3s,visibility .3s}
+.overlay.open{opacity:1;visibility:visible}
+.modal{position:relative;width:100%;max-width:640px;max-height:100%;overflow-y:auto;background:var(--card);color:var(--ink);border-radius:22px;border:1px solid var(--gold);box-shadow:var(--shadow-lg);transform:translateY(24px) scale(.97);transition:transform .35s cubic-bezier(.2,.8,.2,1)}
+.overlay.open .modal{transform:none}
+.modal-head{padding:1.8rem 1.8rem 1.2rem;background:var(--night);color:var(--on-night);border-radius:21px 21px 0 0;position:relative}
+.modal-head h3{font-size:2rem;margin-top:.4rem}
+.modal-head p{color:var(--on-night-muted);font-size:.95rem;margin-top:.4rem}
+.modal-body{padding:1.6rem 1.8rem 1.8rem}
+.x{position:absolute;right:14px;top:14px;width:40px;height:40px;border-radius:50%;border:1px solid rgba(212,175,79,.45);background:transparent;color:var(--on-night);display:grid;place-items:center;cursor:pointer;transition:background .2s,transform .3s;z-index:2}
+.x:hover{background:rgba(255,153,51,.25);transform:rotate(90deg)}
+.fgrid{display:grid;gap:1rem}
+@media (min-width:600px){.fgrid.two{grid-template-columns:1fr 1fr}.span2{grid-column:1/-1}}
+.choice{display:grid;grid-template-columns:repeat(2,1fr);gap:.6rem}
+.choice label{cursor:pointer}
+.choice input{position:absolute;opacity:0;pointer-events:none}
+.choice span{display:flex;align-items:center;gap:.5rem;padding:.7rem .9rem;border:1.5px solid var(--line);border-radius:12px;font-size:.95rem;transition:border-color .2s,background .2s}
+.choice span svg{width:17px;height:17px;color:var(--saffron-text)}
+.choice label:hover span{border-color:var(--gold)}
+.choice input:checked+span{border-color:var(--saffron);background:rgba(255,153,51,.14)}
+.choice input:focus-visible+span{outline:2px solid var(--saffron);outline-offset:2px}
+.success{text-align:center;display:grid;gap:1rem;justify-items:center}
+.success[hidden]{display:none}
+.success .big-ic{width:68px;height:68px;border-radius:50%;background:rgba(255,153,51,.18);display:grid;place-items:center;color:var(--saffron-text)}
+.success .big-ic svg{width:32px;height:32px}
+.recap{width:100%;text-align:left;background:var(--bg-alt);border-radius:14px;padding:1rem 1.2rem;font-size:.93rem;display:grid;gap:.35rem;border:1px solid var(--line)}
+.recap div{display:flex;justify-content:space-between;gap:1rem}
+.recap span{color:var(--muted)}
+.recap b{text-align:right;font-weight:600}
+.darshan-img{position:relative;aspect-ratio:3/3.2;overflow:hidden;background:#000}
+.darshan-img img{width:100%;height:100%;object-fit:cover;object-position:50% 30%;display:block;animation:drift 20s ease-in-out infinite alternate}
+.darshan-img .live{position:absolute;left:14px;top:14px;background:rgba(26,15,8,.85);border:1px solid var(--gold-bright);color:var(--on-night);padding:.3rem .8rem;border-radius:999px;font-size:.8rem;display:flex;align-items:center;gap:.5rem}
+.toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));translate:-50% 30px;background:var(--ink);color:var(--bg);padding:.7rem 1.2rem;border-radius:999px;font-size:.92rem;z-index:200;opacity:0;pointer-events:none;transition:opacity .3s,translate .3s;box-shadow:var(--shadow-lg)}
+.toast.show{opacity:1;translate:-50% 0}
+.to-top{position:fixed;right:calc(18px + env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));width:48px;height:48px;border-radius:50%;border:1px solid var(--gold-bright);background:var(--night);color:var(--gold-bright);display:grid;place-items:center;cursor:pointer;z-index:40;opacity:0;visibility:hidden;transform:translateY(12px);transition:opacity .3s,transform .3s,visibility .3s,background .2s}
+.to-top.show{opacity:1;visibility:visible;transform:none}
+.to-top:hover{background:var(--saffron);color:#2B1B12}
+
+@media (max-width:640px){
+  .section{padding-block:68px}
+  .don-card,.impact,.notice{padding:1.4rem}
+  .modal-head,.modal-body{padding-inline:1.25rem}
+  .tabpanel{padding-inline:1rem}
+  .trow.now{margin-inline:-1rem;padding-inline:1rem}
+  .logo-text b{font-size:1.12rem}
+  .nav .nav-cta{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  .reveal{transform:none}
+}
+</style>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="wrap">
+    <div class="nav-in">
+      <a href="#top" class="logo" aria-label="Shree Gyan Ganj Dham home">
+        <!-- REPLACE WITH TEMPLE LOGO -->
+        <span class="logo-mark"><i data-lucide="flower-2"></i></span>
+        <span class="logo-text"><b>Shree Gyan Ganj Dham</b><span>श्री ज्ञान गंज धाम</span></span>
+      </a>
+      <nav class="links" aria-label="Main">
+        <a class="lnk" href="#timings">Timings</a>
+        <a class="lnk" href="#about">The Divine Mother</a>
+        <a class="lnk" href="#acharya">Consultation</a>
+        <a class="lnk" href="#donate">Donate</a>
+        <a class="lnk" href="#festivals">Festivals</a>
+        <a class="lnk" href="#contact">Contact</a>
+      </nav>
+      <div style="display:flex;gap:.6rem;align-items:center">
+        <button class="btn btn-saffron nav-cta" data-open="donate-jump" id="navDonate" type="button">Donate</button>
+        <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="drawer" aria-label="Open menu" style="display:none"></button>
+      </div>
+    </div>
+  </div>
+  <div class="drawer" id="drawer">
+    <div>
+      <div class="wrap">
+        <nav aria-label="Mobile">
+          <a class="dl" href="#timings">Timings <i data-lucide="clock-3"></i></a>
+          <a class="dl" href="#about">The Divine Mother <i data-lucide="flower-2"></i></a>
+          <a class="dl" href="#acharya">Consultation <i data-lucide="sparkles"></i></a>
+          <a class="dl" href="#donate">Donate <i data-lucide="hand-heart"></i></a>
+          <a class="dl" href="#festivals">Festivals <i data-lucide="calendar-days"></i></a>
+          <a class="dl" href="#contact">Contact <i data-lucide="map-pin"></i></a>
+          <button class="btn btn-saffron" type="button" data-modal="darshan"><i data-lucide="video"></i> Virtual Darshan</button>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<!-- ============ HERO ============ -->
+<section class="hero" aria-label="Welcome">
+  <!-- REPLACE WITH HERO BACKGROUND: a golden temple interior or altar wall -->
+  <div class="hero-bg" role="img" aria-label="Golden carved temple wall"></div>
+  <canvas id="sparks" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <div class="hero-in">
+      <div class="hero-copy">
+        <span class="om rise d1">॥ ॐ श्री लक्ष्मी बाला त्रिपुर सुन्दरी नमः ॥</span>
+        <h1 class="rise d2">Shree Gyan Ganj <em>Dham</em></h1>
+        <p class="deity-tag rise d3"><i data-lucide="flower-2"></i> Maa Laxmi Bala Tripur Sundari</p>
+        <p class="sub rise d3">A quiet sanctuary of devotion, wisdom and grace. Come to be still before the Divine Mother, or sit with the Acharya for guidance.</p>
+        <div class="hero-cta rise d4">
+          <button class="btn btn-saffron" type="button" data-modal="darshan"><i data-lucide="video"></i> Virtual Darshan</button>
+          <a class="btn btn-ghost" href="#donate"><i data-lucide="hand-heart"></i> Donate Now</a>
+        </div>
+        <div class="hero-meta rise d5">
+          <div><small>Temple is</small><b id="heroStatus"><span class="status-dot"></span>Open</b></div>
+          <div><small>Maha Aarti</small><b>Fridays, 7:00 PM</b></div>
+          <div><small>Guidance</small><b>Acharya Dipak Sharma</b></div>
+        </div>
+      </div>
+      <figure class="niche rise d2" style="margin:0">
+        <svg class="mandala" id="mandala" viewBox="-100 -100 200 200" aria-hidden="true"></svg>
+        <div class="arch">
+          <!-- REPLACE WITH MAA LAXMI BALA TRIPUR SUNDARI PHOTO -->
+          <img src="img/deity-main.jpg" alt="Maa Laxmi Bala Tripur Sundari adorned with marigold garlands in the golden sanctum" fetchpriority="high">
+          <figcaption>माँ बाला त्रिपुर सुन्दरी</figcaption>
+        </div>
+      </figure>
+    </div>
+  </div>
+  <div class="scroll-cue" aria-hidden="true"><i data-lucide="chevrons-down"></i></div>
+</section>
+
+<!-- ============ TIMINGS ============ -->
+<section class="section" id="timings">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">Daily Schedule</span>
+      <h2 class="h2">When to visit the Dham</h2>
+      <p class="lead">The doors open twice a day. Aarti is offered at dawn and dusk, and bhog is shared with every devotee who comes.</p>
+    </div>
+    <div class="timings-grid">
+      <div class="card reveal">
+        <div class="tabs" role="tablist" aria-label="Schedule">
+          <button class="tab" role="tab" id="t-open" aria-selected="true" aria-controls="p-open" type="button"><i data-lucide="door-open"></i> Opening Hours</button>
+          <button class="tab" role="tab" id="t-aarti" aria-selected="false" aria-controls="p-aarti" type="button" tabindex="-1"><i data-lucide="flame"></i> Aarti</button>
+          <button class="tab" role="tab" id="t-bhog" aria-selected="false" aria-controls="p-bhog" type="button" tabindex="-1"><i data-lucide="soup"></i> Bhog</button>
+        </div>
+        <!-- EDIT TIMINGS: placeholders, replace with the temple's actual schedule. data-start / data-end are 24h IST minutes used for the "now" highlight -->
+        <div class="tabpanel" role="tabpanel" id="p-open" aria-labelledby="t-open">
+          <div class="trow" data-start="330" data-end="720"><div class="nm"><b>Morning Darshan</b><span>Every day of the week</span></div><time>5:30 AM – 12:00 PM</time></div>
+          <div class="trow" data-start="960" data-end="1260"><div class="nm"><b>Evening Darshan</b><span>Every day of the week</span></div><time>4:00 PM – 9:00 PM</time></div>
+          <div class="trow"><div class="nm"><b>Mid-day rest</b><span>The sanctum is closed for Mata's rest</span></div><time>12:00 – 4:00 PM</time></div>
+        </div>
+        <div class="tabpanel" role="tabpanel" id="p-aarti" aria-labelledby="t-aarti" hidden>
+          <div class="trow" data-start="345" data-end="405"><div class="nm"><b>Mangala Aarti</b><span>Awakening of the Divine Mother</span></div><time>5:45 AM</time></div>
+          <div class="trow" data-start="705" data-end="740"><div class="nm"><b>Madhyahna Aarti</b><span>Before the afternoon rest</span></div><time>11:45 AM</time></div>
+          <div class="trow" data-start="1080" data-end="1140"><div class="nm"><b>Sandhya Aarti</b><span>Evening lamps and bells</span></div><time>6:30 PM</time></div>
+          <div class="trow" data-start="1140" data-end="1230" data-day="5"><div class="nm"><b>Special Maha Aarti</b><span>Fridays only, with havan and bhajans</span></div><time>7:00 PM</time></div>
+        </div>
+        <div class="tabpanel" role="tabpanel" id="p-bhog" aria-labelledby="t-bhog" hidden>
+          <div class="trow"><div class="nm"><b>Prabhat Bhog</b><span>Fruit, kheer and panchamrit prasad</span></div><time>8:00 AM</time></div>
+          <div class="trow"><div class="nm"><b>Raj Bhog</b><span>Offered at noon, shared after Madhyahna Aarti</span></div><time>12:00 PM</time></div>
+          <div class="trow"><div class="nm"><b>Sandhya Prasad</b><span>Distributed to devotees after evening Aarti</span></div><time>7:00 PM onward</time></div>
+          <div class="trow"><div class="nm"><b>Friday Bhandara</b><span>Community meal after the Maha Aarti</span></div><time>8:00 PM</time></div>
+        </div>
+      </div>
+
+      <aside class="notice reveal" aria-label="Special notice">
+        <span class="tag"><i data-lucide="sparkles" style="width:16px;height:16px"></i> Special Notice</span>
+        <h3>Special Maha Aarti happens every Friday at 7:00 PM</h3>
+        <p>Bring your family. Sit with the lamps, the havan and the bhajans, then receive prasad.</p>
+        <div class="cd" id="fridayCd" aria-live="off">
+          <div><b data-u="d">0</b><small>Days</small></div>
+          <div><b data-u="h">0</b><small>Hours</small></div>
+          <div><b data-u="m">0</b><small>Min</small></div>
+          <div><b data-u="s">0</b><small>Sec</small></div>
+        </div>
+      </aside>
+    </div>
+    <p class="mini-note reveal"><i data-lucide="info"></i><span>Timings are shown in Indian Standard Time and may change on festival days. Call the temple office to confirm.</span></p>
+  </div>
+</section>
+
+<!-- ============ ABOUT / DEITY ============ -->
+<section class="section alt" id="about">
+  <div class="wrap about-grid">
+    <div class="collage reveal">
+      <!-- REPLACE WITH PHOTO OF THE SACRED ARTWORK / SANCTUM -->
+      <img class="p1" src="img/artwork.jpg" alt="Painted devotional artwork of the Devi in her divine forms, framed and garlanded" loading="lazy">
+      <!-- REPLACE WITH SHRINGAR DARSHAN PHOTO -->
+      <img class="p2" src="img/deity-shringar.jpg" alt="Deity adorned in pearls, gold ornaments and flower garlands" loading="lazy">
+    </div>
+    <div class="reveal">
+      <span class="eyebrow">The Divine Mother</span>
+      <h2 class="h2">Maa Laxmi Bala Tripur Sundari</h2>
+      <p class="lead">Bala Tripur Sundari is the youthful, gentle form of the Divine Mother, a giver of knowledge, prosperity and peace. Devotees come to her with their questions, their gratitude and their new beginnings.</p>
+      <ul class="about-points" style="padding:0;margin-top:1.8rem">
+        <li><span class="ic"><i data-lucide="book-open"></i></span><div><b>Gyan</b><span>Wisdom and clarity for students, seekers and families.</span></div></li>
+        <li><span class="ic"><i data-lucide="coins"></i></span><div><b>Laxmi</b><span>Prosperity earned with dharma and shared with others.</span></div></li>
+        <li><span class="ic"><i data-lucide="heart-handshake"></i></span><div><b>Seva</b><span>Anna daan, aarti and upkeep carried by the community.</span></div></li>
+      </ul>
+      <div class="shloka">ॐ ऐं ह्रीं श्रीं बालात्रिपुरसुन्दर्यै नमः ॥<small>Mantra of Bala Tripur Sundari</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ACHARYA ============ -->
+<section class="section acharya" id="acharya">
+  <div class="wrap acharya-grid">
+    <div class="pwrap reveal">
+      <div class="portrait">
+        <svg class="rings" viewBox="0 0 100 125" aria-hidden="true" fill="none" stroke="#D4AF4F" stroke-width=".25"><circle cx="50" cy="55" r="18"/><circle cx="50" cy="55" r="28"/><circle cx="50" cy="55" r="38"/><circle cx="50" cy="55" r="48"/></svg>
+        <!-- REPLACE WITH ACHARYA DIPAK SHARMA PORTRAIT: <img src="acharya.jpg" alt="Acharya Dipak Sharma" style="width:100%;height:100%;object-fit:cover"> -->
+        <div class="mono">DS</div>
+        <div class="ph">Portrait placeholder</div>
+      </div>
+      <div class="exp-badge"><b>20+</b> years</div>
+    </div>
+    <div class="reveal">
+      <span class="eyebrow">Spiritual Consultation</span>
+      <h2 class="h2">Acharya Dipak Sharma</h2>
+      <p class="lead">An astrologer with more than twenty years of practice. He reads your chart, your home and your palm, then gives clear and practical guidance rooted in the shastras.</p>
+      <div class="svc-grid">
+        <div class="svc"><div class="ic"><i data-lucide="home"></i></div><h3>Vastu</h3><p>Home, shop and office layouts, directions and remedies that fit how you live.</p></div>
+        <div class="svc"><div class="ic"><i data-lucide="star"></i></div><h3>Astrology</h3><p>Kundli reading, dasha analysis, career, marriage and muhurat guidance.</p></div>
+        <div class="svc"><div class="ic"><i data-lucide="hand"></i></div><h3>Palmistry</h3><p>Reading of the lines and mounts to understand strengths, timing and choices.</p></div>
+        <div class="svc"><div class="ic"><i data-lucide="heart-pulse"></i></div><h3>Healing</h3><p>Mantra, remedy and meditation guidance for calm, balance and renewal.</p></div>
+      </div>
+      <div class="actions">
+        <button class="btn btn-saffron" type="button" data-modal="consult" id="bookBtn"><i data-lucide="calendar-check"></i> Book Consultation</button>
+        <small>In person at the Dham, or online.</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DONATE ============ -->
+<section class="section" id="donate">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">E-Donation</span>
+      <h2 class="h2">Offer your seva</h2>
+      <p class="lead">Every offering supports daily aarti, bhog for devotees and the upkeep of the Dham. Choose a seva amount or enter your own.</p>
+    </div>
+    <div class="don-grid">
+      <form class="card don-card reveal" id="donForm" novalidate>
+        <div class="don-top">
+          <h3 style="font-size:1.7rem">Choose an offering</h3>
+          <div class="seg" role="group" aria-label="Currency">
+            <button type="button" data-cur="INR" aria-pressed="true">₹ INR</button>
+            <button type="button" data-cur="USD" aria-pressed="false">$ USD</button>
+          </div>
+        </div>
+        <div class="amounts" id="amounts"></div>
+        <div class="form-2">
+          <div class="field">
+            <label for="customAmt">Or enter your own amount</label>
+            <div class="cur-input"><span id="curSym">₹</span><input class="input" id="customAmt" inputmode="numeric" autocomplete="off" placeholder="Any amount"></div>
+          </div>
+          <div class="field">
+            <label for="purpose">Offering for</label>
+            <select class="input" id="purpose">
+              <option>Daily aarti and puja</option>
+              <option>Anna daan (food for devotees)</option>
+              <option>Temple upkeep and renovation</option>
+              <option>Festival celebrations</option>
+              <option>Gau seva</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="dName">Name for sankalp</label>
+            <input class="input" id="dName" autocomplete="name" placeholder="Your full name">
+          </div>
+          <div class="field">
+            <label for="freq">Frequency</label>
+            <select class="input" id="freq"><option value="once">One time</option><option value="monthly">Every month</option></select>
+          </div>
+        </div>
+        <div class="summary">
+          <div><div class="big" id="sumAmt">₹1,100</div><small id="sumNote">One-time offering for daily aarti and puja</small></div>
+          <button class="btn btn-saffron" type="submit" id="donGo"><i data-lucide="hand-heart"></i> Continue to payment</button>
+        </div>
+        <div class="err-msg" id="donErr" role="alert"></div>
+        <div class="pay-box" id="payBox" hidden>
+          <b style="font-family:var(--serif);font-size:1.3rem">Payment gateway goes here</b>
+          <p style="color:var(--muted);font-size:.93rem;margin-top:.3rem">Connect Razorpay, Stripe or your bank's gateway to this button. Until then, devotees can pay by UPI to the temple trust account below.</p>
+          <div class="copyrow"><code id="upi">gyanganjdham@upi</code><button class="chip" type="button" data-copy="#upi"><i data-lucide="copy"></i> Copy UPI ID</button></div>
+          <p style="color:var(--muted);font-size:.8rem;margin-top:.7rem">This UPI ID is a placeholder. Replace it with the trust's real ID.</p>
+        </div>
+      </form>
+
+      <aside class="card impact reveal" aria-label="Where your offering goes">
+        <h3>Where it goes</h3>
+        <ul>
+          <li><i data-lucide="flame"></i><span><b>Aarti and puja.</b> Lamps, ghee, flowers and incense, every day.</span></li>
+          <li><i data-lucide="soup"></i><span><b>Prasad and bhandara.</b> Meals shared with all who visit.</span></li>
+          <li><i data-lucide="landmark"></i><span><b>The Dham.</b> Upkeep, cleanliness and facilities for devotees.</span></li>
+        </ul>
+        <hr>
+        <p style="font-size:.88rem;color:var(--on-night-muted)">Add your trust registration and tax-exemption details here once confirmed.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FESTIVALS ============ -->
+<section class="section alt" id="festivals">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">Upcoming Celebrations</span>
+      <h2 class="h2">Festivals at the Dham</h2>
+      <p class="lead">Join the lamps, the bhajans and the community meals. Dates follow the Panchang; the temple confirms muhurat timings closer to each day.</p>
+    </div>
+    <!-- EDIT FESTIVALS: change data-date (YYYY-MM-DD, IST) to update each countdown -->
+    <div class="tl" id="timeline">
+      <article class="ev reveal" data-date="2026-11-06">
+        <div class="dot"><i data-lucide="coins"></i></div>
+        <div class="card body"><div><div class="date">Fri, 6 November 2026</div><h3>Dhanteras</h3><p>Laxmi and Kuber puja in the evening. Devotees bring new utensils and coins for blessing.</p></div><div class="cdm"></div></div>
+      </article>
+      <article class="ev reveal" data-date="2026-11-08">
+        <div class="dot"><i data-lucide="flame-kindling"></i></div>
+        <div class="card body"><div><div class="date">Sun, 8 November 2026</div><h3>Deepawali Maha Laxmi Puja</h3><p>The grandest night of the year for Maa Laxmi. Thousands of diyas, a special shringar and the midnight aarti.</p></div><div class="cdm"></div></div>
+      </article>
+      <article class="ev reveal" data-date="2026-11-20">
+        <div class="dot"><i data-lucide="sunrise"></i></div>
+        <div class="card body"><div><div class="date">Fri, 20 November 2026</div><h3>Dev Uthani Ekadashi</h3><p>The awakening of the Lord after the holy months. Bhajan sandhya and Tulsi vivah celebrations.</p></div><div class="cdm"></div></div>
+      </article>
+      <article class="ev reveal" data-date="2026-11-24">
+        <div class="dot"><i data-lucide="moon-star"></i></div>
+        <div class="card body"><div><div class="date">Tue, 24 November 2026</div><h3>Kartik Purnima</h3><p>Dev Deepawali. Deep daan at dusk, followed by a full-moon Aarti.</p></div><div class="cdm"></div></div>
+      </article>
+      <article class="ev reveal" data-date="2027-03-06">
+        <div class="dot"><i data-lucide="tridentIcon"></i></div>
+        <div class="card body"><div><div class="date">Sat, 6 March 2027</div><h3>Maha Shivaratri</h3><p>Night-long abhishek and jagran at the Shiva shrine in the temple courtyard.</p></div><div class="cdm"></div></div>
+      </article>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer id="contact">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a href="#top" class="logo" style="margin-bottom:1.2rem">
+          <!-- REPLACE WITH TEMPLE LOGO -->
+          <span class="logo-mark"><i data-lucide="flower-2"></i></span>
+          <span class="logo-text"><b>Shree Gyan Ganj Dham</b><span>श्री ज्ञान गंज धाम</span></span>
+        </a>
+        <p>A place of worship dedicated to Maa Laxmi Bala Tripur Sundari, kept alive by devotees and run as a public trust. The Dham offers daily aarti, prasad, festival celebrations and spiritual guidance for all.</p>
+        <p style="margin-top:.8rem;font-size:.85rem">Add your trust name, registration number and founding year here.</p>
+        <div class="socials">
+          <!-- REPLACE # WITH YOUR REAL SOCIAL LINKS -->
+          <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+          <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i data-lucide="youtube"></i></a>
+          <a href="#" aria-label="WhatsApp"><i data-lucide="message-circle"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#timings">Daily Timings</a></li>
+          <li><a href="#about">The Divine Mother</a></li>
+          <li><a href="#acharya">Book Consultation</a></li>
+          <li><a href="#donate">Donate</a></li>
+          <li><a href="#festivals">Festivals</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul class="contact">
+          <!-- REPLACE WITH REAL ADDRESS, PHONE AND EMAIL -->
+          <li><i data-lucide="map-pin"></i><span>Shree Gyan Ganj Dham, street address, city, PIN code</span></li>
+          <li><i data-lucide="phone"></i><span>+91 00000 00000</span></li>
+          <li><i data-lucide="mail"></i><span>info@yourtemple.org</span></li>
+          <li><i data-lucide="clock-3"></i><span>Daily, 5:30 AM – 12 PM and 4 – 9 PM</span></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Find Us</h4>
+        <!-- REPLACE WITH GOOGLE MAPS EMBED (<iframe> from maps.google.com > Share > Embed a map) -->
+        <a class="map" href="https://www.google.com/maps/search/?api=1&query=Shree+Gyan+Ganj+Dham" target="_blank" rel="noopener" aria-label="Open temple location in Google Maps">
+          <svg class="grid" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <rect width="400" height="300" fill="#2A1B10"/>
+            <g stroke="#4A3320" stroke-width="10" fill="none" stroke-linecap="round"><path d="M-10 90H410"/><path d="M-10 220H410"/><path d="M110-10V310"/><path d="M290-10V310"/><path d="M-10 300L200 150 410 20"/></g>
+            <g stroke="#6B4A2A" stroke-width="2" fill="none"><path d="M-10 90H410"/><path d="M-10 220H410"/><path d="M110-10V310"/><path d="M290-10V310"/></g>
+            <rect x="130" y="105" width="140" height="100" rx="8" fill="#2F6B3A" opacity=".35"/>
+          </svg>
+          <span class="pin"><i data-lucide="map-pin"></i></span>
+          <span class="lbl"><span>Open in Google Maps</span><i data-lucide="arrow-up-right" style="width:16px;height:16px"></i></span>
+        </a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="yr">2026</span> Shree Gyan Ganj Dham. All rights reserved.</span>
+      <span class="deva">॥ सर्वे भवन्तु सुखिनः ॥</span>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" type="button" aria-label="Back to top"><i data-lucide="arrow-up"></i></button>
+<div class="toast" id="toast" role="status"></div>
+
+<!-- ============ MODAL: CONSULTATION ============ -->
+<div class="overlay" id="m-consult" role="dialog" aria-modal="true" aria-labelledby="consultTitle">
+  <div class="modal">
+    <div class="modal-head">
+      <button class="x" type="button" data-close aria-label="Close"><i data-lucide="x"></i></button>
+      <span class="eyebrow" style="color:var(--saffron)">Acharya Dipak Sharma</span>
+      <h3 id="consultTitle">Book a consultation</h3>
+      <p>Share a few details and the temple office will confirm your slot.</p>
+    </div>
+    <div class="modal-body">
+      <form id="cForm" novalidate>
+        <div class="fgrid two">
+          <div class="field"><label for="cName">Full name *</label><input class="input" id="cName" autocomplete="name" placeholder="Your name"><div class="err-msg" data-for="cName"></div></div>
+          <div class="field"><label for="cPhone">Phone / WhatsApp *</label><input class="input" id="cPhone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+91 98765 43210"><div class="err-msg" data-for="cPhone"></div></div>
+          <div class="field span2"><label for="cEmail">Email (optional)</label><input class="input" id="cEmail" type="email" autocomplete="email" placeholder="you@example.com"></div>
+          <div class="field span2">
+            <label id="svcLbl">What would you like guidance on? *</label>
+            <div class="choice" role="radiogroup" aria-labelledby="svcLbl">
+              <label><input type="radio" name="svc" value="Vastu" checked><span><i data-lucide="home"></i>Vastu</span></label>
+              <label><input type="radio" name="svc" value="Astrology"><span><i data-lucide="star"></i>Astrology</span></label>
+              <label><input type="radio" name="svc" value="Palmistry"><span><i data-lucide="hand"></i>Palmistry</span></label>
+              <label><input type="radio" name="svc" value="Healing"><span><i data-lucide="heart-pulse"></i>Healing</span></label>
+            </div>
+          </div>
+          <div class="field"><label for="cDate">Preferred date</label><input class="input" id="cDate" type="date"></div>
+          <div class="field"><label for="cMode">How will you meet?</label><select class="input" id="cMode"><option>In person at the Dham</option><option>Online (video call)</option><option>Phone call</option></select></div>
+          <div class="field"><label for="cDob">Date of birth (for astrology)</label><input class="input" id="cDob" type="date"></div>
+          <div class="field"><label for="cTob">Time and place of birth</label><input class="input" id="cTob" placeholder="e.g. 6:20 AM, Lucknow"></div>
+          <div class="field span2"><label for="cMsg">Your question</label><textarea class="input" id="cMsg" rows="3" placeholder="Tell the Acharya briefly what you need help with"></textarea></div>
+        </div>
+        <button class="btn btn-saffron" type="submit" style="width:100%;margin-top:1.4rem"><i data-lucide="send"></i> Prepare my request</button>
+      </form>
+      <div class="success" id="cDone" hidden>
+        <div class="big-ic"><i data-lucide="check"></i></div>
+        <h3 style="font-size:1.9rem">Your request is ready</h3>
+        <p style="color:var(--muted)">Send it to the temple office on WhatsApp so they can confirm your slot with Acharya Ji.</p>
+        <div class="recap" id="recap"></div>
+        <div style="display:flex;gap:.7rem;flex-wrap:wrap;justify-content:center">
+          <a class="btn btn-saffron" id="waLink" href="#" target="_blank" rel="noopener"><i data-lucide="message-circle"></i> Send on WhatsApp</a>
+          <button class="btn btn-outline" type="button" id="copyReq"><i data-lucide="copy"></i> Copy details</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ MODAL: DARSHAN ============ -->
+<div class="overlay" id="m-darshan" role="dialog" aria-modal="true" aria-labelledby="darshanTitle">
+  <div class="modal" style="max-width:560px">
+    <div class="darshan-img">
+      <!-- REPLACE WITH MAA LAXMI BALA TRIPUR SUNDARI PHOTO, or swap this block for your live stream player -->
+      <img src="img/deity-main.jpg" alt="Maa Laxmi Bala Tripur Sundari">
+      <span class="live"><span class="status-dot"></span>Darshan</span>
+      <button class="x" type="button" data-close aria-label="Close"><i data-lucide="x"></i></button>
+    </div>
+    <div class="modal-body" style="text-align:center;display:grid;gap:.8rem;justify-items:center">
+      <h3 id="darshanTitle" style="font-size:2rem">Virtual Darshan</h3>
+      <p style="color:var(--muted)">Take darshan of Maa Laxmi Bala Tripur Sundari from wherever you are. Live aarti streams during Mangala, Sandhya and Friday Maha Aarti.</p>
+      <!-- REPLACE # WITH YOUR YOUTUBE LIVE / FACEBOOK LIVE LINK -->
+      <a class="btn btn-saffron" href="https://www.youtube.com/" target="_blank" rel="noopener"><i data-lucide="play"></i> Watch live aarti</a>
+      <small style="color:var(--muted)">॥ जय माँ लक्ष्मी ॥</small>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  'use strict';
+  /* ---- Config: edit these ---- */
+  var WHATSAPP = '910000000000';      // temple office WhatsApp number, country code first, no +
+  var TZ_OFFSET = 330;                // IST = UTC+5:30, in minutes
+
+  var $ = function(s,r){return (r||document).querySelector(s)};
+  var $$ = function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
+  var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function icons(){ try{ if(window.lucide) lucide.createIcons(); }catch(e){} }
+  /* Lucide has no trident icon in this build: fall back to a known one */
+  $$('[data-lucide="tridentIcon"]').forEach(function(n){ n.setAttribute('data-lucide','moon'); });
+  var burger = $('#burger'); burger.style.display=''; burger.innerHTML='<i class="i-open" data-lucide="menu"></i><i class="i-close" data-lucide="x"></i>';
+  icons();
+  $('#yr').textContent = new Date().getFullYear();
+
+  /* ---- Toast ---- */
+  var toastT;
+  function toast(msg){ var t=$('#toast'); t.textContent=msg; t.classList.add('show'); clearTimeout(toastT); toastT=setTimeout(function(){t.classList.remove('show')},2400); }
+
+  /* ---- Copy helper with fallback ---- */
+  function copyText(text, done){
+    function fallback(){
+      var ta=document.createElement('textarea'); ta.value=text; ta.setAttribute('readonly',''); ta.style.cssText='position:fixed;opacity:0';
+      document.body.appendChild(ta); ta.select(); var ok=false; try{ ok=document.execCommand('copy'); }catch(e){} document.body.removeChild(ta); done(ok);
+    }
+    if(navigator.clipboard && navigator.clipboard.writeText){ navigator.clipboard.writeText(text).then(function(){done(true)},fallback); } else fallback();
+  }
+  $$('[data-copy]').forEach(function(b){ b.addEventListener('click',function(){ copyText($(b.getAttribute('data-copy')).textContent,function(ok){ toast(ok?'Copied to clipboard':'Select the text and copy it'); }); }); });
+
+  /* ---- Mobile menu ---- */
+  var drawer=$('#drawer');
+  function setMenu(open){ burger.setAttribute('aria-expanded',open); burger.setAttribute('aria-label',open?'Close menu':'Open menu'); drawer.classList.toggle('open',open); }
+  burger.addEventListener('click',function(){ setMenu(burger.getAttribute('aria-expanded')!=='true'); });
+  $$('#drawer a').forEach(function(a){ a.addEventListener('click',function(){ setMenu(false); }); });
+  $$('#drawer [data-modal]').forEach(function(b){ b.addEventListener('click',function(){ setMenu(false); }); });
+  window.addEventListener('resize',function(){ if(window.innerWidth>=1024) setMenu(false); });
+  $('#navDonate').addEventListener('click',function(){ $('#donate').scrollIntoView({behavior:reduce?'auto':'smooth'}); });
+
+  /* ---- Nav scroll state, active link, back to top ---- */
+  var nav=$('#nav'), toTop=$('#toTop');
+  function onScroll(){ nav.classList.toggle('scrolled',window.scrollY>10); toTop.classList.toggle('show',window.scrollY>700); }
+  window.addEventListener('scroll',onScroll,{passive:true}); onScroll();
+  toTop.addEventListener('click',function(){ window.scrollTo({top:0,behavior:reduce?'auto':'smooth'}); });
+  if('IntersectionObserver' in window){
+    var links=$$('.links a.lnk');
+    var so=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ links.forEach(function(l){ l.classList.toggle('active', l.getAttribute('href')==='#'+e.target.id); }); } }); },{rootMargin:'-45% 0px -50% 0px'});
+    ['timings','about','acharya','donate','festivals','contact'].forEach(function(id){ var el=document.getElementById(id); if(el) so.observe(el); });
+    var ro=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); ro.unobserve(e.target); } }); },{threshold:.08});
+    $$('.reveal').forEach(function(el){ ro.observe(el); });
+  } else { $$('.reveal').forEach(function(el){ el.classList.add('in'); }); }
+
+  /* ---- Modals ---- */
+  var lastFocus=null, openId=null;
+  function openModal(id){
+    var o=$('#m-'+id); if(!o) return; lastFocus=document.activeElement; openId=id;
+    o.classList.add('open'); document.body.style.overflow='hidden';
+    setTimeout(function(){ var f=$('input,select,textarea,button,a',o); var first=$('.input',o)||$('[data-close]',o); (first||f).focus({preventScroll:true}); },60);
+  }
+  function closeModal(){
+    if(!openId) return; var o=$('#m-'+openId); o.classList.remove('open'); document.body.style.overflow=''; openId=null;
+    if(lastFocus&&lastFocus.focus) lastFocus.focus({preventScroll:true});
+  }
+  $$('[data-modal]').forEach(function(b){ b.addEventListener('click',function(){ openModal(b.getAttribute('data-modal')); }); });
+  $$('[data-close]').forEach(function(b){ b.addEventListener('click',closeModal); });
+  $$('.overlay').forEach(function(o){ o.addEventListener('mousedown',function(e){ if(e.target===o) closeModal(); }); });
+  document.addEventListener('keydown',function(e){
+    if(e.key==='Escape') closeModal();
+    if(e.key==='Tab' && openId){
+      var o=$('#m-'+openId), f=$$('a[href],button:not([disabled]),input:not([type=hidden]),select,textarea',o).filter(function(n){return n.offsetParent!==null});
+      if(!f.length) return; var a=f[0], z=f[f.length-1];
+      if(e.shiftKey && document.activeElement===a){ e.preventDefault(); z.focus(); }
+      else if(!e.shiftKey && document.activeElement===z){ e.preventDefault(); a.focus(); }
+    }
+  });
+
+  /* ---- IST helpers ---- */
+  function istNow(){ var n=new Date(); return new Date(n.getTime()+(TZ_OFFSET+n.getTimezoneOffset())*60000); } // wall-clock IST in a local Date
+  function istMinutes(){ var d=istNow(); return d.getHours()*60+d.getMinutes(); }
+
+  /* ---- Timings: tabs + live "now" highlight ---- */
+  var tabs=$$('.tab');
+  function selectTab(t){
+    tabs.forEach(function(x){ var on=x===t; x.setAttribute('aria-selected',on); x.tabIndex=on?0:-1; $('#'+x.getAttribute('aria-controls')).hidden=!on; });
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){ selectTab(t); });
+    t.addEventListener('keydown',function(e){
+      var n=null; if(e.key==='ArrowRight') n=tabs[(i+1)%tabs.length]; if(e.key==='ArrowLeft') n=tabs[(i-1+tabs.length)%tabs.length];
+      if(n){ e.preventDefault(); selectTab(n); n.focus(); }
+    });
+  });
+  function updateStatus(){
+    var m=istMinutes(), day=istNow().getDay(), openNow=(m>=330&&m<720)||(m>=960&&m<1260);
+    var el=$('#heroStatus'); el.innerHTML='<span class="status-dot'+(openNow?'':' closed')+'"></span>'+(openNow?'Open now':'Closed');
+    $$('.trow[data-start]').forEach(function(r){
+      var s=+r.dataset.start, e=+r.dataset.end, dd=r.dataset.day;
+      r.classList.toggle('now', m>=s && m<e && (dd===undefined || +dd===day));
+    });
+  }
+  updateStatus(); setInterval(updateStatus,30000);
+
+  /* ---- Countdowns ---- */
+  function parts(ms){ var s=Math.max(0,Math.floor(ms/1000)); return {d:Math.floor(s/86400),h:Math.floor(s%86400/3600),m:Math.floor(s%3600/60),s:s%60}; }
+  function nextFriday(){
+    var n=istNow(), t=new Date(n.getFullYear(),n.getMonth(),n.getDate(),19,0,0);
+    var add=(5-n.getDay()+7)%7; t.setDate(t.getDate()+add);
+    if(t<=n) t.setDate(t.getDate()+7);
+    return t-n; // ms remaining, both in IST wall-clock
+  }
+  var fr=$('#fridayCd');
+  function tickFri(){ var p=parts(nextFriday()); ['d','h','m','s'].forEach(function(k){ $('[data-u="'+k+'"]',fr).textContent=k==='d'?p[k]:String(p[k]).padStart(2,'0'); }); }
+  var evs=$$('.ev');
+  var nextMarked=false;
+  function tickEvents(){
+    var now=Date.now(); nextMarked=false;
+    evs.forEach(function(ev){
+      var t=Date.parse(ev.dataset.date+'T00:00:00+05:30'), end=t+86400000, box=$('.cdm',ev);
+      if(now>=end){ box.innerHTML='<div style="min-width:0;padding:.55rem 1rem"><small>Completed</small></div>'; ev.style.opacity='.6'; return; }
+      if(now>=t){ box.innerHTML='<div style="min-width:0;padding:.6rem 1.1rem;background:var(--saffron);color:#2B1B12;border-color:var(--saffron)"><b style="font-size:1.3rem;color:#2B1B12">Today</b></div>'; }
+      else { var p=parts(t-now); box.innerHTML='<div><b>'+p.d+'</b><small>Days</small></div><div><b>'+String(p.h).padStart(2,'0')+'</b><small>Hrs</small></div><div><b>'+String(p.m).padStart(2,'0')+'</b><small>Min</small></div><div><b>'+String(p.s).padStart(2,'0')+'</b><small>Sec</small></div>'; }
+      if(!nextMarked){ nextMarked=true; if(!ev.classList.contains('next')){ ev.classList.add('next'); var h=$('h3',ev); if(!$('.badge',h)) h.insertAdjacentHTML('beforeend','<span class="badge">NEXT</span>'); } }
+      else { ev.classList.remove('next'); var b=$('.badge',ev); if(b) b.remove(); }
+    });
+  }
+  tickFri(); tickEvents();
+  setInterval(function(){ tickFri(); tickEvents(); },1000);
+
+  /* ---- Donations ---- */
+  var PRESETS={
+    INR:{sym:'₹',loc:'en-IN',list:[[501,'Diya seva'],[1100,'Bhog seva'],[2100,'Shringar seva'],[5100,'Maha Aarti seva']]},
+    USD:{sym:'$',loc:'en-US',list:[[11,'Diya seva'],[51,'Bhog seva'],[101,'Shringar seva'],[251,'Maha Aarti seva']]}
+  };
+  var cur='INR', amount=1100, amountsEl=$('#amounts'), custom=$('#customAmt');
+  function fmt(v){ var c=PRESETS[cur]; return c.sym+Number(v).toLocaleString(c.loc); }
+  function renderAmounts(){
+    amountsEl.innerHTML='';
+    PRESETS[cur].list.forEach(function(p){
+      var b=document.createElement('button'); b.type='button'; b.className='amt'; b.dataset.v=p[0];
+      b.setAttribute('aria-pressed',String(amount===p[0]&&!custom.value));
+      b.innerHTML='<b>'+fmt(p[0])+'</b><span>'+p[1]+'</span>';
+      b.addEventListener('click',function(){ amount=p[0]; custom.value=''; $('#donErr').textContent=''; renderAmounts(); summary(); });
+      amountsEl.appendChild(b);
+    });
+  }
+  function summary(){
+    $('#sumAmt').textContent=amount>0?fmt(amount):fmt(0);
+    var f=$('#freq').value==='monthly'?'Monthly':'One-time';
+    $('#sumNote').textContent=f+' offering for '+$('#purpose').value.toLowerCase();
+  }
+  $$('.seg button').forEach(function(b){ b.addEventListener('click',function(){
+    cur=b.dataset.cur; $$('.seg button').forEach(function(x){ x.setAttribute('aria-pressed',String(x===b)); });
+    $('#curSym').textContent=PRESETS[cur].sym; amount=PRESETS[cur].list[1][0]; custom.value=''; renderAmounts(); summary();
+  }); });
+  custom.addEventListener('input',function(){
+    custom.value=custom.value.replace(/[^\d]/g,'').slice(0,8);
+    amount=custom.value?parseInt(custom.value,10):0; $('#donErr').textContent=''; renderAmounts(); summary();
+  });
+  $('#purpose').addEventListener('change',summary); $('#freq').addEventListener('change',summary);
+  $('#donForm').addEventListener('submit',function(e){
+    e.preventDefault();
+    if(!(amount>0)){ $('#donErr').textContent='Choose an offering or enter an amount to continue.'; custom.focus(); return; }
+    $('#donErr').textContent=''; var box=$('#payBox'); box.hidden=false; box.scrollIntoView({behavior:reduce?'auto':'smooth',block:'nearest'});
+    toast('Offering of '+fmt(amount)+' selected');
+  });
+  renderAmounts(); summary();
+
+  /* ---- Consultation form ---- */
+  var cForm=$('#cForm'), lastReq='';
+  var d=new Date(); var iso=function(x){return x.toISOString().slice(0,10)}; $('#cDate').min=iso(d);
+  function setErr(id,msg){ var i=$('#'+id), m=$('[data-for="'+id+'"]'); i.classList.toggle('err',!!msg); m.textContent=msg||''; }
+  cForm.addEventListener('submit',function(e){
+    e.preventDefault();
+    var name=$('#cName').value.trim(), phone=$('#cPhone').value.trim(), ok=true;
+    setErr('cName',name.length<2?'Please enter your full name.':'');
+    var digits=phone.replace(/\D/g,''); setErr('cPhone',digits.length<10?'Enter a phone number with at least 10 digits.':'');
+    if(name.length<2||digits.length<10) { ($('#cName.err')||$('#cPhone.err')).focus(); return; }
+    var svc=($('input[name="svc"]:checked')||{}).value||'Astrology';
+    var rows=[['Name',name],['Phone',phone],['Guidance',svc],['Meeting',$('#cMode').value]];
+    if($('#cDate').value) rows.push(['Preferred date',$('#cDate').value]);
+    if($('#cDob').value) rows.push(['Date of birth',$('#cDob').value]);
+    if($('#cTob').value.trim()) rows.push(['Birth time and place',$('#cTob').value.trim()]);
+    $('#recap').innerHTML=rows.map(function(r){ return '<div><span></span><b></b></div>'; }).join('');
+    $$('#recap div').forEach(function(div,i){ $('span',div).textContent=r0(rows[i]); $('b',div).textContent=rows[i][1]; });
+    function r0(r){return r[0];}
+    var q=$('#cMsg').value.trim();
+    lastReq='Namaste. I would like to book a consultation with Acharya Dipak Sharma.\n'+rows.map(function(r){return r[0]+': '+r[1]}).join('\n')+(q?'\nQuestion: '+q:'');
+    $('#waLink').href='https://wa.me/'+WHATSAPP+'?text='+encodeURIComponent(lastReq);
+    cForm.hidden=true; $('#cDone').hidden=false; $('.modal',$('#m-consult')).scrollTop=0; icons();
+  });
+  $('#copyReq').addEventListener('click',function(){ copyText(lastReq,function(ok){ toast(ok?'Request copied':'Select the text and copy it'); }); });
+  $$('#cForm .input').forEach(function(i){ i.addEventListener('input',function(){ if(i.classList.contains('err')) setErr(i.id,''); }); });
+  /* Reset form view whenever modal reopens after success */
+  $('[data-modal="consult"]',document).addEventListener('click',function(){ if(!$('#cDone').hidden){ $('#cDone').hidden=true; cForm.hidden=false; cForm.reset(); } });
+
+  /* ---- Mandala (decorative) ---- */
+  var man=$('#mandala'), s='<g fill="none" stroke="#D4AF4F" stroke-width=".35">';
+  for(var i=0;i<16;i++){ s+='<ellipse cx="0" cy="-62" rx="9" ry="28" transform="rotate('+(i*22.5)+')"/>'; }
+  for(var j=0;j<24;j++){ s+='<ellipse cx="0" cy="-86" rx="4" ry="12" transform="rotate('+(j*15)+')" opacity=".7"/>'; }
+  s+='<circle r="34"/><circle r="48"/><circle r="97" stroke-dasharray="1 2.5"/></g>'; man.innerHTML=s;
+
+  /* ---- Floating sparks in hero ---- */
+  var cv=$('#sparks'), cx=cv.getContext('2d'), W,H,dots=[],raf;
+  function size(){ var r=cv.getBoundingClientRect(); var dpr=Math.min(window.devicePixelRatio||1,2); W=cv.width=r.width*dpr; H=cv.height=r.height*dpr; }
+  function seed(){ dots=[]; var n=Math.round(Math.min(46,W/38)); for(var i=0;i<n;i++) dots.push({x:Math.random()*W,y:Math.random()*H,r:(.6+Math.random()*1.8)*(W/900+.6),v:.15+Math.random()*.45,p:Math.random()*6.28,a:.25+Math.random()*.55}); }
+  function draw(t){
+    cx.clearRect(0,0,W,H);
+    dots.forEach(function(p){
+      p.y-=p.v; p.x+=Math.sin(t/1800+p.p)*.25; if(p.y<-10){p.y=H+10;p.x=Math.random()*W;}
+      var tw=.6+.4*Math.sin(t/600+p.p); cx.beginPath(); cx.fillStyle='rgba(255,176,70,'+(p.a*tw)+')'; cx.shadowColor='rgba(255,153,51,.9)'; cx.shadowBlur=10; cx.arc(p.x,p.y,p.r,0,6.283); cx.fill();
+    });
+    raf=requestAnimationFrame(draw);
+  }
+  size(); seed();
+  if(!reduce){ raf=requestAnimationFrame(draw);
+    if('IntersectionObserver' in window){ new IntersectionObserver(function(es){ if(es[0].isIntersecting){ if(!raf) raf=requestAnimationFrame(draw); } else { cancelAnimationFrame(raf); raf=0; } }).observe(cv); } }
+  window.addEventListener('resize',function(){ size(); seed(); });
+})();
+</script>
+
+</body></html>
